@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>546</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>747</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFajl">
+    <property name="title">
+     <string>&amp;Fájl</string>
+    </property>
+    <addaction name="actionKilepes"/>
+   </widget>
+   <widget class="QMenu" name="menuJatek">
+    <property name="title">
+     <string>&amp;Játék</string>
+    </property>
+    <addaction name="actionJatek"/>
+    <addaction name="actionSzunet"/>
+   </widget>
+   <addaction name="menuFajl"/>
+   <addaction name="menuJatek"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionKilepes">
+   <property name="text">
+    <string>&amp;Kilépés</string>
+   </property>
+   <property name="toolTip">
+    <string>Kilépés a játékból</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionJatek">
+   <property name="text">
+    <string>&amp;Új...</string>
+   </property>
+   <property name="toolTip">
+    <string>Új játék indítása</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSzunet">
+   <property name="text">
+    <string>&amp;Szünet</string>
+   </property>
+   <property name="toolTip">
+    <string>Szünet a játékban</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
